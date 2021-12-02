@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="u_imp_saml_user_ymi3z1hlub">efa8c6db2f8001107c8d2b5df699b6b2</map>
+        <order>100</order>
+        <script><![CDATA[// create first name if neccessary
+if (source.first_name.nil())
+    target.first_name = source.user_name;
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-01 08:00:42</sys_created_on>
+        <sys_id>36b80adb2f8001107c8d2b5df699b65f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Leave Management System" source="x_691158_leave_man">5f43e8422f633010c885bcb62799b6de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5f43e8422f633010c885bcb62799b6de</sys_scope>
+        <sys_update_name>sys_transform_script_36b80adb2f8001107c8d2b5df699b65f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-01 08:00:42</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>
